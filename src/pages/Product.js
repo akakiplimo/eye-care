@@ -21,7 +21,7 @@ const ProductPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Product Image */}
                     <div>
-                        <img src={product.image} alt={product.name} className="w-full rounded-lg" />
+                        <img src={product.img} alt={product.name} className="w-full rounded-lg" />
                     </div>
                     {/* Product Details */}
                     <div>
@@ -56,7 +56,7 @@ const ProductPage = () => {
                             .filter(p => p.id !== product.id)
                             .map(p => (
                                 <div key={p.id} className="border rounded-lg p-4">
-                                    <img src={p.image} alt={p.name} className="w-full rounded-lg" />
+                                    <img src={p.img} alt={p.name} className="w-full rounded-lg" />
                                     <h3 className="text-lg font-semibold">{p.name}</h3>
                                     <p className="text-gray-600">${p.price}</p>
                                     <button 
