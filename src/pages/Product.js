@@ -23,7 +23,7 @@ const ProductPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Product Image */}
                     <div>
-                        <img src={product.img} alt={product.name} className="w-full rounded-lg" />
+                        <img src={`../../public/${product.img}`} alt={product.name} className="w-full rounded-lg" />
                     </div>
                     {/* Product Details */}
                     <div>
