@@ -10,6 +10,8 @@ const ProductPage = () => {
     const product = products.find(p => p.id === parseInt(productId));
     const { addToCart } = useContext(CartContext);
 
+    console.log('img', product.img)
+
     if (!product) {
         return <div>Product not found</div>;
     }
